@@ -17,11 +17,11 @@ audio.addEventListener("loadedmetadata", () => {
 playButton.addEventListener("click", () => {
   // Jalankan audio dari detik ke-10 setelah metadata siap
   if (audioReady) {
-    audio.currentTime = 4;
+    audio.currentTime = 15;
     audio.play();
   } else {
     audio.addEventListener("loadedmetadata", () => {
-      audio.currentTime = 4;
+      audio.currentTime = 15;
       audio.play();
     });
   }
